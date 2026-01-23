@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 1.6;
+  color: #000000;
+  background-color: #f5f5f7;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/*header starts here*/
+header {
+  margin-bottom: 64px;
+}
+.header-flex {
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+button {
+  padding: 16px 32px;
+  border-radius: 28px;
+  background-color: #13183f;
+  color: #ffffff;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.98);
+}
+button:hover {
+  background-color: #666ca3;
+}
+
+/* header finishes here */
+
+.hero {
+  position: relative;
+  /* overflow: hidden; */
+  margin-bottom: 64px;
+}
+
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h1 {
+  font-weight: 800;
+  font-size: 50px;
+  max-width: 457px;
+  color: #13183f;
+  margin-bottom: 24px;
+}
+.hero-text p {
+  max-width: 457px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #83869a;
+  margin-bottom: 40px;
+}
+.btn-hero {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 16px 32px;
+  border-radius: 28px;
+  color: #ffffff;
+  border: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  cursor: pointer;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+}
+.btn-hero:active {
+  transform: scale(0.98);
+}
+.btn-hero:hover {
+  background: linear-gradient(180deg, #fb9b80 0%, #ec7ac2 100%);
+}
+
+.purple-bg {
+  position: absolute;
+  width: 317px;
+  height: 1008px;
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+  top: -359px;
+  right: -49px;
+  border-radius: 158px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.image-container {
+  position: relative;
+}
+
+.card-hours {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 34px 54px 0px #06168d29;
+  padding: 20px 72px 19px 24px;
+  position: absolute;
+  top: 364px;
+  left: -125px;
+}
+.card-hours span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #83869a;
+}
+.card-hours strong {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 120%;
+  color: #13183f;
+}
+
+.card-members {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  padding: 20px 57px 19px 24px;
+  position: absolute;
+  top: 109px;
+  left: 265px;
+}
+
+.card-members span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #83869a;
+}
+.card-members strong {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 120%;
+  color: #13183f;
+}
+
+/*hero finishes here */
+
+/*cards section starts herre */
+
+.courses {
+  padding: 64px 32px 40px 32px;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 15px;
+}
+.courses h2 {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+.cards-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 352px));
+  gap: 32px;
+  row-gap: 56px;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 64px 32px 40px 32px;
+  box-shadow: 0px 25px 50px 0px #06168d0b;
+  position: relative;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 24px;
+  /* min-height: 218px; */
+}
+.content-wrapper p {
+  flex-grow: 1;
+}
+
+.icon-wrapper {
+  position: absolute;
+  top: -20px;
+}
+
+.card h3 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 120%;
+  color: #13183f;
+}
+
+.card p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #83869a;
+}
+
+.card a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #f74780;
+}
+/*cards section finishes here */
+main {
+  margin-bottom: 144px;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: #13183f;
+}
+.footer-flex {
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-btn {
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+}
+.footer-btn:active {
+  transform: scale(0.98);
+}
+.footer-btn:hover {
+  background: linear-gradient(180deg, #6970f5 0%, #ee70c0 100%);
+}
