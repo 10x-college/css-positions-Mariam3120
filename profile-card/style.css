@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  line-height: 1.6;
+  color: #000000;
+  background-color: #f5f5f7;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #19a1ae;
+  position: relative;
+  overflow: hidden;
+}
+.left-circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  width: 978px;
+  height: 976px;
+  background: linear-gradient(
+    180deg,
+    rgba(9, 137, 180, 0) 0.78%,
+    #53ffee 99.94%
+  );
+  opacity: 0.5;
+  transform: translate(-31%, -46%);
+}
+.right-circle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 50%;
+  width: 978px;
+  height: 976px;
+  background: linear-gradient(
+    180deg,
+    rgba(9, 137, 180, 0) 0.78%,
+    #53ffee 99.94%
+  );
+  opacity: 0.25;
+  transform: translate(23%, 30%) rotate(-135deg);
+}
+
+.profile-card {
+  width: 350px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  z-index: 1;
+}
+.profile-background {
+  background-image: url("assets/bckg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 144px;
+  position: relative;
+  margin-bottom: 70px;
+}
+.image-wrapper {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
+
+.profile-information h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  text-align: center;
+  color: #2e3349;
+  margin-bottom: 8px;
+}
+.age {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 125%;
+  text-align: center;
+  color: #6b7082;
+}
+.profile-information h3 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+  text-align: center;
+  color: #6b7082;
+  margin-bottom: 24px;
+}
+
+.stats-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 49px;
+  border-top: 1px solid #e8e9ec;
+}
+
+.stats-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.number {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  text-align: center;
+}
+
+.stats-txt {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 125%;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: #6b7082;
+}
